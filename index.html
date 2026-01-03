@@ -1,52 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Recipe Cookbook</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Recipe Cookbook</title>
+<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <header>
-        <h1>My Recipe Cookbook</h1>
-        <p>Discover delicious recipes!</p>
-        <input type="text" id="search" placeholder="Search recipes...">
-    </header>
-    
-    <main id="recipe-container">
-        <!-- Recipe 1 -->
-        <div class="recipe-card" data-category="Vegan">
-             <img src="images/vegan salad.jpg" alt="Vegan Salad">
-            <h2>Vegan Salad</h2>
-            <h3>Ingredients:</h3>
-            <ul>
-                <li>2 cups mixed greens</li>
-                <li>1 tomato, chopped</li>
-                <li>1 cucumber, sliced</li>
-                <li>1 tbsp olive oil</li>
-            </ul>
-            <h3>Instructions:</h3>
-            <p>Toss all ingredients together. Serve fresh!</p>
-        </div>
-        
-        <!-- Recipe 2 -->
-        <div class="recipe-card" data-category="Dessert">
-             <img src="images/Chocolate Cake.jpg" alt="Vegan Salad">
-            <h2>Chocolate Cake</h2>
-            <h3>Ingredients:</h3>
-            <ul>
-                <li>2 cups flour</li>
-                <li>1 cup sugar</li>
-                <li>1/2 cup cocoa powder</li>
-                <li>1 cup milk</li>
-            </ul>
-            <h3>Instructions:</h3>
-            <p>Mix dry ingredients, add milk, bake at 350°F for 30 mins.</p>
-        </div>
-        
-        <!-- Add more recipes here -->
-    </main>
-    
-    <script src="script.js"></script>
+
+<header>
+
+    <h1>My Recipe Cookbook</h1>
+    <p>Discover delicious recipes!</p>
+
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="vegan.html">Vegan</a>
+        <a href="dessert.html">Desserts</a>
+    </nav>
+
+    <input type="text" id="search" placeholder="Search recipes...">
+</header>
+
+<main id="recipe-container">
+
+    <!-- Vegan Salad -->
+    <div class="recipe-card" data-category="Vegan">
+        <img src="images/vegan salad.jpg" alt="Vegan Salad">
+        <h2>Vegan Salad</h2>
+        <h3>Ingredients:</h3>
+        <ul>
+            <li>Mixed greens</li>
+            <li>Tomato</li>
+            <li>Cucumber</li>
+        </ul>
+        <h3>Instructions:</h3>
+        <p>Mix and serve fresh.</p>
+    </div>
+
+    <!-- Chocolate Cake -->
+    <div class="recipe-card" data-category="Dessert">
+        <img src="images/Chocolate Cake.jpg" alt="Chocolate Cake">
+        <h2>Chocolate Cake</h2>
+        <h3>Ingredients:</h3>
+        <ul>
+            <li>Flour</li>
+            <li>Sugar</li>
+            <li>Cocoa Powder</li>
+        </ul>
+        <h3>Instructions:</h3>
+        <p>Bake for 30 minutes.</p>
+    </div>
+
+    <!-- NEW RECIPE Pasta -->
+    <div class="recipe-card" data-category="Dinner">
+        <img src="images/pasta.jpg" alt="Pasta">
+        <h2>Creamy Pasta</h2>
+        <h3>Ingredients:</h3>
+        <ul>
+            <li>Pasta</li>
+            <li>Cream</li>
+            <li>Cheese</li>
+        </ul>
+        <h3>Instructions:</h3>
+        <p>Boil pasta and mix sauce.</p>
+    </div>
+
+
+
+
+</main>
+
+<script src="script.js"></script>
 </body>
 </html>
